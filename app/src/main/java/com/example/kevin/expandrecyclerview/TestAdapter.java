@@ -1,4 +1,4 @@
-package com.nubility.kevin.adapter;
+package com.example.kevin.expandrecyclerview;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,8 +10,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.kevin.expandrecyclerview.R;
-import com.nubility.kevin.bean.EvlBean;
+import com.example.kevin.expandrecyclerview.bean.EvlBean;
+import com.nubility.kevin.adapter.ExpandRecyclerBean;
+import com.nubility.kevin.adapter.ExpandableRecyclerAdapter;
 
 import java.util.List;
 
@@ -42,7 +43,7 @@ public class TestAdapter extends ExpandableRecyclerAdapter {
     }
 
     @Override
-    void itemChildClick(int[] dataPosition) {
+    public void itemChildClick(int[] dataPosition) {
         Toast.makeText(mContext, dataPosition[0] + " " + dataPosition[1], Toast.LENGTH_SHORT).show();
     }
 
@@ -79,12 +80,6 @@ public class TestAdapter extends ExpandableRecyclerAdapter {
         }
     }
 
-
-    public void setData(List<EvlBean> ltBean) {
-//        mLtBean.clear();
-//        mLtBean.addAll(ltBean);
-//        notifyDataSetChanged();
-    }
 }
 
 

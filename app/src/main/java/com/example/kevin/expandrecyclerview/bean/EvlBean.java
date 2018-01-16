@@ -1,4 +1,4 @@
-package com.nubility.kevin.bean;
+package com.example.kevin.expandrecyclerview.bean;
 
 import java.util.List;
 

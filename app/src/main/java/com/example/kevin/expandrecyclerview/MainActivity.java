@@ -6,8 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.nubility.kevin.adapter.ExpandRecyclerBean;
-import com.nubility.kevin.adapter.TestAdapter;
-import com.nubility.kevin.bean.EvlBean;
+import com.example.kevin.expandrecyclerview.bean.EvlBean;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -41,7 +41,7 @@ public abstract class ExpandableRecyclerAdapter extends RecyclerView.Adapter {
         });
     }
 
-    abstract void itemChildClick(int[] dataPosition);
+    public abstract void itemChildClick(int[] dataPosition);
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
